@@ -4,9 +4,11 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 //引入初始样式
-import './assets/styles/reset.css'
-import './assets/styles/border.css'
+import 'styles/reset.css'
+import 'styles/border.css'
 import fastclick from 'fastclick'
+//引入iconfont
+import 'styles/iconfont.css'
 
 Vue.config.productionTip = false
 //正确使用fastClick

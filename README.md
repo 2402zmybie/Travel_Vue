@@ -1,17 +1,21 @@
-git使用：
-一：查看
-1 查看本地分支
- git branch
-2 查看远程分支
- git branch -r
-3 查看所有的分支
- git branch -a
- 
-二 创建分支
-1 创建本地分支(分支名为 dev)
-  git branch dev
-2 切换到新创建的分支
-  git checkout dev
-3 将新分支push到github
-  git push origin dev
-  
+# travel
+
+> A Vue.js project
+
+## Build Setup
+
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+```
+
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

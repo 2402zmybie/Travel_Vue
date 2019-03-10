@@ -3,28 +3,24 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-//引入初始样式
+import fastClick from 'fastclick'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'babel-polyfill'
+import store from './store'
 import 'styles/reset.css'
 import 'styles/border.css'
-import fastclick from 'fastclick'
-//引入iconfont
 import 'styles/iconfont.css'
-//引入vue-awesome-swiper
-import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
-Vue.use(VueAwesomeSwiper)
 
 Vue.config.productionTip = false
-//正确使用fastClick
-fastclick.attach(document.body)
-
-//作为父子组件通信的媒介   注册全局的bus
-Vue.prototype.bus = new Vue();
+fastClick.attach(document.body)
+Vue.use(VueAwesomeSwiper)
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })
